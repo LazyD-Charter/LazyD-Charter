@@ -1,6 +1,7 @@
 ### Hi there 👋
 ### The not-so-finished LazyD Charter. For some videos: https://www.youtube.com/playlist?list=PLpHRyb4AiI6nOZrDDBoz-8I9-w_ps3PfN
 
+Excel VBA file and some AutoIT apps to use with it. Do whatever with them, don't really care.
 
 <!--
 **LazyD-Charter/LazyD-Charter** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
