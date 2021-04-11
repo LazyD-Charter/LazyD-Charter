@@ -1,5 +1,6 @@
-### Hi there 👋
-### The not-so-finished LazyD Charter. For some videos: https://www.youtube.com/playlist?list=PLpHRyb4AiI6nOZrDDBoz-8I9-w_ps3PfN
+The not-so-finished LazyD Charter. For some videos: https://www.youtube.com/playlist?list=PLpHRyb4AiI6nOZrDDBoz-8I9-w_ps3PfN
+
+After opening LazyD Charter, you will first have to open up VBA Editor (ALT + F11) and any module with code on it (i.e., expand "Modules" and double click on "mdlButtons"). This is due to a Microsoft bug or limitation. "Chart Interface" having approximately 700 controls on it should be the reason.
 
 Excel VBA file and some AutoIT apps to use with it. Do whatever with them, don't really care.
 
