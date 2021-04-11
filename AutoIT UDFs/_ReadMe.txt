@@ -1,0 +1,1 @@
+AutoIT UDFs written by others. Not all are used by Charter.
