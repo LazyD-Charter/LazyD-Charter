@@ -1,0 +1,1826 @@
+
+
+	<RULE NAME="SpRec" TOPLEVEL="ACTIVE">
+	
+		<L PROPNAME="ACTION">
+			<P VALSTR="disable speech recognition">+disable +speech +recognition</P>
+			<P VALSTR="reload grammar rules">+reload +grammar +rules</P>
+			<P VALSTR="reload runtime rules">+reload +runtime +rules</P>
+			<P VALSTR="dictation state active">+dictation +state +active</P>
+			<P VALSTR="dictation state inactive">+dictation +state +inactive</P>
+			<P VALSTR="dictation state user">+dictation +state +user</P>
+			<P VALSTR="execute"><L><P>+execute</P><P>+continue</P></L>+action</P>
+			<P VALSTR="execute"><L><P>+click</P><P>+press</P></L><O>...</O><L><P>+execute</P><!--P>+continue</P--></L>+button</P>
+			<P VALSTR="discard"><L><P>+discard</P><P>+cancel</P></L>+action</P>
+			<P VALSTR="discard"><L><P>+click</P><P>+press</P></L><O>...</O><L><P>+discard</P><!--P>+cancel</P--></L>+button</P>
+			<P VALSTR="confirmation enabled"><L><P>+enable</P><P>+start</P></L>+confirmation +mode</P>
+			<P VALSTR="confirmation practice"><L><P>+practice</P><P>+practise</P></L>+confirmation +mode</P>
+			<P VALSTR="confirmation disabled"><L><P>+disable</P><P>+stop</P></L>+confirmation +mode</P>
+			<P VALSTR="show frm_SpRec">
+				<L><P>+show</P><P>+open</P></L>
+				<L><P>+confirmation</P><P>+speech<O>...</O></P></L>
+				<L><P>+form</P><P>+window</P></L>
+			</P>
+			<P VALSTR="hide frm_SpRec">
+				<L><P>+hide</P><P>+dismiss</P></L>
+				<L><P>+confirmation</P><P>+speech<O>...</O></P></L>
+				<L><P>+form</P><P>+window</P></L>
+			</P>
+			<P VALSTR="reset frm_SpRec">
+				<L><P>+reset</P></L>
+				<L><P>+confirmation</P><P>+speech<O>...</O></P></L>
+				<L><P>+form</P><P>+window</P></L>
+				<L><P>+position</P><P>+location</P></L>
+			</P>			
+			<P VALSTR="vbOK"><L><P>+click</P><P>+press</P></L><O>...</O><L><P>+okey</P><P>+okay</P></L><L><P>+button</P><P>+buttons</P></L></P>
+			<P VALSTR="vbCancel"><L><P>+click</P><P>+press</P></L><O>...</O><L><P>+cancel</P></L>+button</P>
+			<P VALSTR="vbYes"><L><P>+click</P><P>+press</P></L><O>...</O><L><P>+yes</P></L>+button</P>
+			<P VALSTR="vbNo"><L><P>+click</P><P>+press</P></L><O>...</O><L><P>+no</P></L>+button</P>
+			<P VALSTR="send tab"><L><P>+next</P></L><O>...</O><L><P>+control</P></L></P>
+			<P VALSTR="send shift tab"><L><P>+previous</P></L><O>...</O><L><P>+control</P></L></P>
+			<P VALSTR="send space"><L><P>+click</P><P>+press</P></L><L><P>+that</P><P>+this</P></L>+button</P>
+		</L>
+	
+	</RULE>
+	
+	
+	<RULE NAME="app_actions" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<P PROPNAME="ACTION" VALSTR="start"><L><P>+run</P><P>+start</P></L></P>
+				<O>...</O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="CH_Updater">+updater</P>
+					<P VALSTR="CH_DownloadExtras"><L><P>+extras</P><P>+downloader</P></L></P>
+					<P VALSTR="CH_SetFolderManager">+set +folder +manager</P>
+				</L>
+				<L><P>+application</P><P>+app</P></L>
+			</P>
+		</L>
+	
+	</RULE>
+	
+	
+	<RULE NAME="folder_actions" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<P PROPNAME="ACTION" VALSTR="open"><L><P>+open</P></L></P>
+				<O>...</O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="InstallPath"><L><P>+install</P><P>+lazy +dee</P></L></P>
+					<P VALSTR="AppsDir"><L><P>+application</P><P>+applications</P><P>+apps</P><P>+app</P></L></P>
+					<P VALSTR="AssetsDir"><L><P>+asset</P><P>+assets</P><P>+asshats</P><!-- :) --></L></P>
+					<P VALSTR="ProjectDir"><L><P>+project</P><P>+projects</P></L></P>
+					<P VALSTR="SamplesDir"><L><P>+sample</P><P>+samples</P></L></P>
+					<P VALSTR="SongsDir"><L><P>+song</P><P>+songs</P></L></P>
+					<P VALSTR="TempDir"><L><P>+temp</P><P>+temporary</P><P>+download</P><P>+backup</P></L></P>
+				</L>
+				<L><P>+folder</P><P>+directory</P></L>
+			</P>
+		</L>
+	
+	</RULE>
+	
+	
+	<RULE NAME="workbook_actions" TOPLEVEL="ACTIVE">
+	
+		<L>
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="set focus">+set +focus</P>
+					<P VALSTR="minimize">+minimize</P>
+					<P VALSTR="maximize">+maximize</P>
+					<P VALSTR="restore">+restore</P>
+				</L>
+				<O>...</O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="workbook"><L><P>+excel</P><P>+workbook</P><P>+charter</P></L></P>
+					<P VALSTR="userform"><L><P>+userform</P><P>+interface</P></L></P>
+				</L>
+			</P>
+			
+			<P>
+				<P PROPNAME="ACTION" VALSTR="bring to top"><L><P>+bring</P><P>+brink</P></L></P>
+				<O>...</O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="workbook"><L><P>+excel</P><P>+workbook</P><P>+charter</P></L></P>
+				</L>
+				<O>...</O>
+				<L><P>+front</P><P>+top</P></L>
+			</P>
+			
+		</L>
+	
+	</RULE>
+	
+	
+	<RULE NAME="sheets" TOPLEVEL="ACTIVE">
+
+		<L>
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="activate">+activate</P>
+					<P VALSTR="activate">+switch</P>
+					<P VALSTR="hide">+hide</P>
+					<P VALSTR="activate">+show</P>
+				</L>
+				<O>...</O>
+				<RULEREF NAME="SHEETNAMES" PROPNAME="SHEETNAME"/>
+				<P>+sheet</P>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="activate">+activate<O>...</O>+sheet</P>
+					<P VALSTR="activate">+switch<O>...</O>+sheet</P>
+					<P VALSTR="hide">+hide<O>...</O>+sheet</P>
+					<P VALSTR="activate">+show<O>...</O>+sheet</P>
+				</L>
+				<RULEREF NAME="SHEETNAMES" PROPNAME="SHEETNAME"/>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="mouse_wheel" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<P PROPNAME="ACTION" VALSTR="scroll_level">+scroll +level</P>
+				<L>
+					<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE_SHORT"/>
+					<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE_LONG"/>
+				</L>
+			</P>
+			
+			<P>
+				<L>
+					<P PROPNAME="SWITCH" VALSTR="0">+default</P>
+					<RULEREF NAME="NUMBERS_ORDER" PROPNAME="ORDER"/>
+				</L>
+				<P PROPNAME="ACTION" VALSTR="scroll_level">+scroll +level</P>
+			</P>
+			
+			<P>
+				<P>+set</P>
+				<P>+default</P>
+				<P PROPNAME="ACTION" VALSTR="set_scroll_steps">+scroll +steps</P>
+				<L><P>+to</P><P>+too</P></L>
+				<L>
+					<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE_SHORT"/>
+					<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE_LONG"/>
+				</L>
+			</P>
+			
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="Direction"><L><P>+turn +on</P><P>+enable</P></L></P>
+					<P VALSTR="Disabled"><L><P>+turn +off</P><P>+disable</P></L></P>
+				</L>
+				<P>+scroll</P>
+				<P PROPNAME="ACTION" VALSTR="snap direction"><L><P>+snap</P><P>+snapping</P></L></P>
+			</P>
+			
+			<P>
+				<P PROPNAME="ACTION" VALSTR="snap direction">+snap</P>
+				<O>...</O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="Up"><L><P>+up</P><P>+upward</P></L></P>
+					<P VALSTR="Down"><L><P>+down</P><P>+downward</P></L></P>
+					<P VALSTR="Direction"><L><P>+direction</P></L></P>
+				</L>
+			</P>
+			
+			<P>
+				<O>+set</O>
+				<P PROPNAME="ACTION" VALSTR="selection method">+selection</P>
+				<L><P>+method</P><P>+criteria</P></L>
+				<O>...</O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="Row No.">+row +number</P>
+					<P VALSTR="Ratio">+ratio</P>
+				</L>
+			</P>
+			
+		</L>
+	
+	</RULE>
+	
+
+	<RULE NAME="chart_commands" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="buttons">+show</P>
+					<P VALSTR="buttons">+toggle</P>
+				</L>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="show properties"><L><P>+meta +data</P><P>+metadata</P></L></P>
+					<P VALSTR="show properties">+properties</P>
+					<P VALSTR="show properties"><L><P>+property +rows</P><P>+propertyrows</P></L></P>
+					<P VALSTR="show patterns"><L><P>+pad +patterns</P><P>+padpatterns</P></L></P>
+					<P VALSTR="show patterns"><L><P>+lane +patterns</P><P>+lanepatterns</P></L></P>
+				</L>
+			</P>
+			
+			<P>
+				<P PROPNAME="ACTION" VALSTR="buttons"><L><P>+click</P><P>+press</P></L><O>...</O></P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="Clean Sheet">+clean +sheet</P>
+					<P VALSTR="Create Track">+create +track</P>
+					<P VALSTR="Import Chart">+import +chart</P>
+					<P VALSTR="Export Chart">+export +chart</P>
+					<P VALSTR="Backup Track">+backup +track</P>
+					<P VALSTR="Restore Track">+restore +track</P>
+					<P VALSTR="Song Select">+select<O>...</O></P>
+				</L>
+				<P>+button</P>
+			</P>
+			
+			<P>
+				<P PROPNAME="ACTION" VALSTR="combo import format">+set<O>...</O></P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="notes.chart">+import +format<O>...</O>+notes +chart</P>
+					<P VALSTR="LazyD.Charter">+import +format<O>...</O>+lazy +dee +charter</P>
+				</L>
+			</P>
+			
+			<P>
+				<P PROPNAME="ACTION" VALSTR="combo export format">+set<O>...</O></P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="notes.chart">+export +format<O>...</O>+notes +chart</P>
+					<P VALSTR="LazyD.Charter">+export +format<O>...</O>+lazy +dee +charter</P>
+					<P VALSTR="Both">+export +format<O>...</O>+both<O>...</O></P>
+				</L>
+			</P>
+			
+			<P>
+				<P PROPNAME="ACTION" VALSTR="combo import folder">+import +from<O>...</O></P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="Song Folder">+song</P>
+					<P VALSTR="Backup Folder">+backup</P>
+					<!--P VALSTR="Other">+other</P-->
+				</L>
+				<P>+folder</P>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_namedrange" TOPLEVEL="ACTIVE">
+	
+		<L>
+			<P>
+				<P>+select</P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="rng"><L><P>+meta</P><P>+metas</P></L></P>
+					<P VALSTR="rng"><L><P>+meta +data</P><P>+metadata</P></L></P>
+					<P VALSTR="rng"><L><P>+property</P><P>+field</P></L></P>
+				</L>
+				<RULEREF NAME="METADATA_LIST" PROPNAME="SWITCH"/>
+			</P>
+		
+			<P>
+				<P>+select</P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="setting"><L><P>+setting</P><P>+settings</P></L></P>
+				</L>
+				<RULEREF NAME="SETTINGS_LIST" PROPNAME="SWITCH"/>
+			</P>
+		</L>
+	
+	</RULE>
+	
+	
+	<RULE NAME="tm_commands" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="start"><L><P>+start</P><P>+ignite</P></L></P>
+					<P VALSTR="warmup"><L><P>+warm +up</P><P>+warmup</P></L></P>
+					<P VALSTR="shutdown"><L><P>+shut +down</P><P>+shutdown</P></L></P>
+				</L>
+				<O>...</O>
+				<P PROPNAME="ACTION" VALSTR="TM">+machine</P>
+			</P>
+			
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="start">+start</P>
+					<P VALSTR="start">+stop</P>
+					<P VALSTR="pause">+pause</P>
+					<P VALSTR="pause">+resume</P>
+				</L>
+				<O>...</O>
+				<P PROPNAME="ACTION" VALSTR="playback">+playback</P>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="interface" TOPLEVEL="ACTIVE">
+	
+		<L>
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="show">+show +interface</P>
+					<P VALSTR="hide"><L><P>+hide</P><P>+dismiss</P></L>+interface</P>
+					<P VALSTR="reload">+reload +interface</P>
+					<P VALSTR="edit">+interface<L><P>+edit +mode</P><P>+editmode</P></L></P>
+					<P VALSTR ="hide frm_Lists">
+						<L><P>+hide</P><P>+dismiss</P></L>
+						<O>...</O>
+						<L><P>+list</P><P>+lists</P></L>
+						<L><P>+form</P><P>+window</P></L>
+					</P>
+				</L>
+			</P>
+			
+			<P>
+				<P>+reset</P>
+				<O>...</O>
+				<L PROPNAME="ACTION">
+					<P VALSTR ="reset CI">+chart +interface</P>
+					<P VALSTR ="reset TM">+machine +interface</P>
+					<P VALSTR ="reset frm_Log"><O>+information</O>+log<L><P>+form</P><P>+window</P></L></P>
+					<P VALSTR ="reset frm_Lists"><L><P>+list</P><P>+lists</P></L><L><P>+form</P><P>+window</P></L></P>
+					<P VALSTR ="reset ChVideo">+video<O>+player</O></P>
+				</L>
+				<L><P>+position</P><P>+location</P></L>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="multipage">+switch</P>
+					<P VALSTR="multipage">+show</P>
+					<!--P>+to</P-->
+				</L>
+				<O>...</O>
+				<L>
+					<P>
+						<RULEREF NAME="PAGE_NAMES1" PROPNAME="PAGENAME"/>
+						<L><P>+page</P><P>+pages</P></L>
+					</P>
+					
+					<P>
+						<RULEREF NAME="PAGE_NAMES2" PROPNAME="PAGENAME"/>
+						<L><P>+sub</P><P>+sup</P></L><P>+page</P>
+					</P>
+				</L>
+				
+			</P>
+			
+		</L>
+	
+	</RULE>
+
+
+	<RULE NAME="act_mov" TOPLEVEL="ACTIVE">
+		
+		<L PROPNAME="ACTION">
+			<P VALSTR="mov">+move</P>
+			<P VALSTR="mov">+go<L><P>+to</P><P>+two</P><P>+tu</P></L></P>
+			<P VALSTR="mov">+jump</P>
+		</L>
+		<!--P PROPNAME="ACTION" VALSTR="mov">+move</P-->
+		<L>
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="duration"><O>to<O>the</O></O>+duration</P>
+					<P VALSTR="fr"><o>to<O>the</O></o><L><P>+first +row</P><P>+firstrow</P></L></P>
+					<P VALSTR="lr"><o>to<O>the</O></o><L><P>+last +row</P><P>+lastrow</P></L></P>
+					<P VALSTR="fn"><o>to<O>the</O></o><L><P>+first +note</P><P>+firstnote</P></L></P>
+					<P VALSTR="ln"><o>to<O>the</O></o><L><P>+last +note</P><P>+lastnote</P></L></P>
+				</L>
+			</P>
+			
+			<P>
+				<L PROPNAME="DIRECTION">
+					<P VALSTR="-">+up</P>
+					<P VALSTR=" ">+down</P>
+					<P VALSTR="-0"><L><P>+up +check</P><P>+upcheck</P></L></P>
+					<P VALSTR="0"><L><P>+down +check</P><P>+downcheck</P></L></P>
+					<P VALSTR="-"><o>to<O>the</O></o>+previous</P>
+					<P VALSTR=" "><o>to<O>the</O></o>+next</P>
+				</L>
+			
+				<O>
+					<L>
+						<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE_SHORT"/>
+						<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE_LONG"/>
+					</L>
+				</O>
+				
+				<L PROPNAME="SWITCH">
+					<P VALSTR="def">+default<L><P>+step</P><P>+steps</P><P>+row</P><P>+rows</P></L></P>
+					<P VALSTR="s"><L><P>+step</P><P>+steps</P><P>+row</P><P>+rows</P></L></P>
+					<P VALSTR="n"><L><P>+note +line</P><P>+note +lines</P></L></P>
+					<P VALSTR="m"><L><P>+measure +line</P><P>+measure +lines</P></L></P>
+					
+					<P VALSTR="bpm"><L><P>+beat</P><P>+b +p +m</P><P>+bpm</P></L><o><L><P>+marker</P><P>+markers</P></L></o></P>
+					<P VALSTR="tms"><L><P>+time +signature</P><P>+timesignature</P><P>+t +m +s</P><P>+tms</P></L><o><L><P>+marker</P><P>+markers</P></L></o></P>
+					<P VALSTR="anc">+anchor<o><L><P>+marker</P><P>+markers</P></L></o></P>
+					
+					<P VALSTR="sec"><L><P>+section</P><P>+sections</P></L><o><L><P>+marker</P><P>+markers</P></L></o></P>
+					<P VALSTR="tre"><L><P>+track +event</P><P>+trackevent</P><P>+track +events</P><P>+trackevents</P></L><o><L><P>+marker</P><P>+markers</P></L></o></P>
+					<P VALSTR="lyr"><L><P>+lyric</P><P>+lyrics</P></L><o><L><P>+marker</P><P>+markers</P></L></o></P>
+					
+					<P VALSTR="inste"><L><P>+instrument +event</P><P>+instrumentevent</P><P>+instrument  events</P><P>+instrumentevent</P></L><o><L><P>+marker</P><P>+markers</P></L></o></P>
+					<P VALSTR="solo">+solo<o><L><P>+marker</P><P>+markers</P></L></o></P>
+					<P VALSTR="sp"><L><P>+star +power</P><P>+starpower</P></L><o><L><P>+marker</P><P>+markers</P></L></o></P>
+				</L>
+			</P>
+			
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="t"><O>+to</O><L><P>+tick +number</P><P>+ticknumber</P></L></P>
+					<P VALSTR="tick"><O>+to</O>+tick<o>+value</o></P>
+					<P VALSTR="time"><o>+to</o>+time<O>+value</O></P>
+				</L>
+				
+				<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE_LONG" />
+			</P>
+			
+			<P>			
+				<L PROPNAME="SWITCH">
+					<P VALSTR="pre"><o>to<o>the</o></o>+previous +note</P>
+					<P VALSTR="next"><o>to<o>the</o></o>+next +note</P>
+				</L>
+				
+				<O>on<O>the</O></O><O><RULEREF NAME="PADS" PROPNAME="PAD"/></O>
+			</P>
+			
+			<P>	
+				<O>to<O>the</O></O>
+				<P PROPNAME="SWITCH" VALSTR="mark">+mark</P>
+				<RULEREF NAME="MARK_LIST" PROPNAME="MARK"/>
+			</P>
+			
+			<P>
+				<!--L PROPNAME="SWITCH">
+					<P VALSTR="secname">+move</P>
+					<P VALSTR="secname">+go +to</P>
+				</L-->
+				<O>...</O>
+				<L PROPNAME="SWITCH"><P VALSTR="secname">+section</P><P VALSTR="secname">+sections</P></L>
+				<!--P PROPNAME="SWITCH" VALSTR="secname">+name</P-->
+				<RULEREF NAME="SECTIONS" PROPNAME="SECTION"/>
+			</P>
+			
+			<P>
+				<O>...</O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="m#">+measure<O>+line</O></P>
+					<P VALSTR="n#">+note<O>+line</O></P>
+				</L>
+				<P>+number</P>
+				<L>
+					<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE_SHORT"/>
+					<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE_LONG"/>
+				</L>
+			</P>
+			
+			<P>
+				<O>...</O>
+				<P PROPNAME="SWITCH" VALSTR="active"><L><P>+active</P><P>+action</P><P>+selected</P></L><L><P>+cell</P><P>+row</P><P>+step</P></L></P>
+			</P>
+			
+		</L>
+		
+	</RULE>
+
+	
+	<RULE NAME="act_sync" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="mark">+enter</P>
+					<P VALSTR="del">+delete</P>
+				</L>
+				<O>...</O>
+				<L PROPNAME="ACTION">
+					<P VALSTR="TM_sync">+sink</P>
+					<P VALSTR="TM_sync">+synchronization</P>
+				</L>
+				<P>+mark</P><P>+marker</P>
+			</P>
+			
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="inc">+increase</P>
+					<P VALSTR="dec">+decrease</P>
+				</L>
+				<O>...</O>
+				<L PROPNAME="ACTION">
+					<P VALSTR="TM_delay">+delay</P>
+					<P VALSTR="TM_delay">+row +time</P>
+				</L>
+				<P>+by</P><P>+bye</P><P>+buy</P>
+				<L>
+					<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE_SHORT"/>
+					<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE_LONG"/>
+				</L>
+				<O><L><P>+m +s</P><P>+ms</P><P>+millisecond</P><P>+milliseconds</P><P>+milli +seconds</P><P>+milli +second</P></L></O>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="sync">+sink</P>
+					<P VALSTR="sync">+synchronize</P>
+				</L>
+				<O>...</O>
+				<L><P>+track</P><P>+time</P></L>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="TM_sync">+move</P>
+					<P VALSTR="TM_sync">+go<L><P>+to</P><P>+two</P><P>+tu</P></L></P>
+					<P VALSTR="TM_sync">+jump</P>
+				</L>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="pre"><o>to<O>the</O></o>+previous</P>
+					<P VALSTR="next"><o>to<O>the</O></o>+next</P>
+				</L>
+				<L>
+					<P>+sink</P>
+					<P>+synchronization</P>
+				</L>
+				<P>+mark</P><P>+marker</P>
+			</P>
+			
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_mark" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="add">+add</P>
+					<P VALSTR="update">+update</P>
+					<P VALSTR="del">+delete</P>
+				</L>
+				<O>...</O>
+				<P PROPNAME="ACTION" VALSTR="mark">+mark</P>
+				<O><RULEREF NAME="MARK_LIST" PROPNAME="DIRECTION"/></O>
+			</P>
+			
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="del all">+delete +all</P>
+					<P VALSTR="list">+list</P>
+				</L>
+				<P PROPNAME="ACTION" VALSTR="mark">+marks</P>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_markers" TOPLEVEL="ACTIVE">
+			
+		<L>
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="enter">+enter</P>
+					<P VALSTR="enter">+add</P>
+					<P VALSTR="del">+delete</P>
+				</L>
+				<O>...</O>	
+				<L PROPNAME="ACTION">
+					<P VALSTR="anc">+anchor</P>
+					<P VALSTR="sec">+section</P>
+					<P VALSTR="event">+track +event</P>
+					<P VALSTR="lyr"><L><P>+lyric</P><P>+lyrics</P></L></P>
+					<P VALSTR="inste">+instrument +event</P>
+				</L>
+				<O>+marker</O>
+			</P>
+			
+			<!-- BPM MARKERS-->
+			<P>
+				<L>
+					<P>
+						<P PROPNAME="SWITCH" VALSTR="bpm">+enter</P>
+						<O>...</O>				
+						<P PROPNAME="ACTION" VALSTR="bpm"><L><P>+bpm</P><P>+b +p +m</P><P>+beat</P></L></P>
+						<O>+marker</O>
+						<L>
+							<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+							<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE1_LONG"/>
+						</L>
+					</P>
+					
+					<P>
+						<P>+enter</P>
+						<O>...</O>
+						<L PROPNAME="SWITCH">
+							<P VALSTR="bpm lnr">+linear</P>
+							<P VALSTR="bpm time">+time</P>				
+						</L>
+						<P PROPNAME="ACTION" VALSTR="bpm"><L><P>+bpm</P><P>+b +p +m</P><P>+beat</P></L></P>
+						<O>+marker</O>
+					</P>
+					
+					<P>
+						<P>+enter</P>
+						<O>...</O>
+						<P PROPNAME="ACTION" VALSTR="bpm"><L><P>+bpm</P><P>+b +p +m</P><P>+beat</P></L>+marker</P>
+						<P PROPNAME="SWITCH" VALSTR="bpm fixed">+on +every</P>
+						<O><L>
+							<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE2_SHORT"/>
+							<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE2_LONG"/>
+						</L></O>
+						<L PROPNAME="EVERY">
+							<P VALSTR="N">+note +line</P>
+							<P VALSTR="M">+measure +line</P>
+						</L>
+						<L PROPNAME="DIRECTION">
+							<P VALSTR=" "><L><P>+increase +by</P><P>+increasebuy</P></L></P>
+							<P VALSTR="-"><L><P>+decrease +by</P><P>+decreasebuy</P></L></P>
+							<P VALSTR=" ">+plus</P>
+							<P VALSTR="-">+minus</P>
+						</L>
+						<L>
+							<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+							<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE1_LONG"/>
+						</L>
+					</P>
+					
+					<P>
+						<L PROPNAME="SWITCH">
+							<P VALSTR="bpm del">+delete<O>...</O></P>
+							<P VALSTR="bpm del all">+delete +all</P>				
+						</L>
+						<P PROPNAME="ACTION" VALSTR="bpm"><L><P>+bpm</P><P>+b +p +m</P><P>+beat</P></L></P>
+						<O>+marker</O>
+					</P>
+				</L>
+			</P>
+			
+			<!-- TMS MARKERS -->
+			<P>
+				<L>
+					<P>
+						<P PROPNAME="ACTION" VALSTR="tms">+enter</P>
+						<O>...</O>
+						<P PROPNAME="SWITCH" VALSTR="tms"><L><P>+time +signature</P><P>+timesignature</P><P>+t +m +s</P><P>+tms</P></L></P>
+						<O>+marker</O>
+						<L>
+							<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+							<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE1_LONG"/>
+						</L>
+						<P>+by</P>
+						<L>
+							<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE2_SHORT"/>
+							<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE2_LONG"/>
+						</L>
+						<O>
+							<P>+times</P>
+							<L>
+								<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE3_SHORT"/>
+								<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE3_LONG"/>
+							</L>	
+						</O>
+					</P>
+					
+					<P>
+						<L PROPNAME="SWITCH">
+							<P VALSTR="tms del">+delete<O>...</O></P>
+							<P VALSTR="tms del all">+delete +all</P>				
+						</L>
+						<P PROPNAME="ACTION" VALSTR="tms"><L><P>+time +signature</P><P>+timesignature</P><P>+t +m +s</P><P>+tms</P></L></P>
+						
+						<O>+marker</O>
+					</P>
+				</L>
+			</P>
+			
+			<!-- SOLO MARKER -->
+			
+			<P>
+				<P PROPNAME="ACTION" VALSTR="sol">+enter</P>
+				<O>...</O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="sol">+solo<O>+start</O></P>
+					<P VALSTR="sol end"><L><P>+solo +end</P><P>+soloend</P></L></P>
+				</L>
+				<O>+marker</O>
+			</P>
+			
+			<!-- STARPOWER MARKER -->
+			
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="sp">+enter</P>
+					<P VALSTR="sp update">+update</P>
+					<P VALSTR="sp del">+delete</P>
+				</L>
+				<O>...</O>
+				<P PROPNAME="ACTION" VALSTR="sp"><L><P>+star +power</P><P>+starpower</P></L></P>
+				<O>+marker</O>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_note" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<P PROPNAME="SWITCH" VALSTR=" ">+enter</P>	
+				<O>...</O>
+				<P PROPNAME="ACTION" VALSTR="note">+note</P>
+				<O>...</O>
+				<RULEREF NAME="PADS" PROPNAME="PAD"/>
+				<O>
+					<L>
+						<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+						<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE1_LONG"/>
+					</L>
+				</O>
+			</P>
+			
+			<P>
+				<P PROPNAME="SWITCH" VALSTR="clear">+clear</P>
+				<O>...</O>
+				<P PROPNAME="ACTION" VALSTR="note">+notes</P>
+			</P>
+		</L>
+
+	</RULE>
+	
+	
+	<RULE NAME="act_sus" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<P PROPNAME="SWITCH" VALSTR=" ">+enter</P>	
+				<O>...</O>
+				<P PROPNAME="ACTION" VALSTR="sus">+sustain</P>
+				<O>...</O>
+				<RULEREF NAME="PADS" PROPNAME="PAD"/>
+			</P>
+			
+			<P>
+				<P PROPNAME="SWITCH" VALSTR="update">+update</P>	
+				<O>...</O>
+				<P PROPNAME="ACTION" VALSTR="sus">+sustain</P>
+				<O>...</O>
+				<RULEREF NAME="PADS" PROPNAME="PAD"/>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_shift" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<P PROPNAME="ACTION" VALSTR="shift">+shift</P>
+				<O>...</O>
+				<O><RULEREF NAME="PADS" PROPNAME="PAD"/></O>
+				<O><L PROPNAME="DIRECTION">
+					<P VALSTR="-"><L><P>+up +by</P><P>+upbuy</P></L></P>
+					<P VALSTR=" "><L><P>+down +by</P><P>+downbuy</P></L></P>
+				</L></O>
+				<O>
+					<L>
+						<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+						<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE1_LONG"/>
+					</L>
+				</O>
+				<L><P>+steps</P><P>+step</P><P>+rows</P><P>+row</P></L>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_over" TOPLEVEL="ACTIVE">
+		
+		<P PROPNAME="ACTION" VALSTR="over"><L><P>+copy +method</P><P>+copymethod</P></L></P>
+		<L PROPNAME="SWITCH">
+			<P VALSTR="on"><L><P>+over +write</P><P>+overwrite</P></L></P>
+			<P VALSTR="off">+merge</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_copy" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="copy"><L><P>+copy +track</P><P>+copytrack</P></L></P>
+					<P VALSTR="copy"><L><P>+copy +range</P><P>+copyrange</P></L></P>
+				</L>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="all"><L><P>+all<O>+notes</O></P><P>+everything</P></L></P>
+					<P VALSTR="start"><O>+from<O>+the</O></O>+start</P>
+					<P VALSTR="end"><O>+to<O>+the</O></O>+end</P>
+				</L>
+				<O>...</O>
+				<O><RULEREF NAME="PADS" PROPNAME="PAD"/></O>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="copy"><L><P>+copy +track</P><P>+copytrack</P></L></P>
+					<P VALSTR="copy"><L><P>+copy +range</P><P>+copyrange</P></L></P>
+				</L>
+				<P><L><P>+for</P><P>+for +a</P></L></P>
+				<L>
+					<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+					<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE1_LONG"/>
+				</L>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="s"><L><P>+step</P><P>+steps</P></L></P>
+					<P VALSTR="n"><L><P>+note</P><P>+notes</P><P>+note +line</P><P>+note +lines</P></L></P>
+					<P VALSTR="m"><L><P>+measure</P><P>+measures</P><P>+measure +line</P><P>+measure +lines</P></L></P>
+				</L>
+				<O>...</O>
+				<O><RULEREF NAME="PADS" PROPNAME="PAD"/></O>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_sel" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L>
+					<P>
+						<P PROPNAME="ACTION" VALSTR="sel"><L><P>+select +track</P><P>+selecttrack</P></L></P>
+						<L PROPNAME="SWITCH">
+							<P VALSTR="all"><L><P>+all</P><P>+everything</P></L></P>
+						</L>
+						<O>...</O>
+						<O><RULEREF NAME="PADS" PROPNAME="PAD"/></O>
+					</P>
+					
+					<P>
+						<P PROPNAME="ACTION" VALSTR="sel">+select</P>
+						<O>...</O>
+						<L PROPNAME="SWITCH">
+							<P VALSTR="all"><L><P>+whole</P><P>+hole</P></L></P>
+							<P VALSTR="all">+everything</P>
+						</L>
+						<O>...</O>
+						<P>+track</P>
+						<O>...</O>
+						<O><RULEREF NAME="PADS" PROPNAME="PAD"/></O>
+					</P>
+				</L>
+			</P>
+			
+			<P>
+				<P PROPNAME="ACTION" VALSTR="sel"><L><P>+select +track</P><P>+selecttrack</P></L></P>
+				<P><L><P>+for</P><P>+for +a</P></L></P>
+				<L>
+					<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+					<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE1_LONG"/>
+				</L>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="s"><L><P>+step</P><P>+steps</P></L></P>
+					<P VALSTR="n"><L><P>+note</P><P>+notes</P><P>+note +line</P><P>+note +lines</P></L></P>
+					<P VALSTR="m"><L><P>+measure</P><P>+measures</P><P>+measure +line</P><P>+measure +lines</P></L></P>
+				</L>
+				<O>...</O>
+				<O><RULEREF NAME="PADS" PROPNAME="PAD"/></O>
+			</P>
+		</L>
+		
+	</RULE>	
+	
+	
+	<RULE NAME="act_paste" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<P PROPNAME="ACTION" VALSTR="paste">+paste</P>
+				<O>...</O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="paste"><L><P>+copy +range</P><P>+copyrange</P></L></P>
+					<P VALSTR="paste"><L><P>+copied +range</P><P>+copiedrange</P></L></P>
+				</L>
+				<O>
+					<L><P>+into</P><P>+onto</P></L>
+					<O>...</O>
+					<RULEREF NAME="PADS" PROPNAME="PAD"/>
+				</O>
+				<O>
+					<P>+for</P>
+					<L>
+						<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+						<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE1_LONG"/>
+					</L>
+					<L><P>+time</P><P>+times</P></L>
+				</O>
+			</P>
+		</L>
+		
+	</RULE>	
+	
+	
+	<RULE NAME="act_clr" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="clr all"><L><P>+clear<O>+the</O><L><P>+whole</P><P>+hole</P></L>+track</P></L></P>
+					<P VALSTR="clr all"><L><P>+clear +all +notes</P><P>+clearallnotes</P></L></P>
+				</L>
+				<O>...</O>
+				<O><RULEREF NAME="PADS" PROPNAME="PAD"/></O>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION" >
+					<P VALSTR="clr"><L><P>+clear<O>+the</O>+track</P><P>+cleartrack</P></L></P>
+					<P VALSTR="clr"><L><P>+clear +notes</P><P>+clearnotes</P></L></P>
+				</L>
+				<L>
+					<P>
+						<P>+for</P>
+						<L>
+							<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+							<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE1_LONG"/>
+						</L>
+					</P>
+					
+					<P>
+						<P>+for +a</P>
+					</P>
+				</L>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="s"><L><P>+step</P><P>+steps</P></L></P>
+					<P VALSTR="n"><L><P>+note</P><P>+notes</P><P>+note +line</P><P>+note +lines</P></L></P>
+					<P VALSTR="m"><L><P>+measure</P><P>+measures</P><P>+measure +line</P><P>+measure +lines</P></L></P>
+				</L>
+				<O>...</O>
+				<O><RULEREF NAME="PADS" PROPNAME="PAD"/></O>
+			</P>
+		</L>
+		
+	</RULE>	
+	
+	
+	<RULE NAME="act_clrp" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="clrp all"><L><P>+clear +all +pad +patterns</P></L></P>
+					<P VALSTR="clrp all"><L><P>+clear +all +lane +patterns</P></L></P>
+				</L>
+				<O>...</O>
+				<O><RULEREF NAME="PADS" PROPNAME="PAD"/></O>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION" >
+					<P VALSTR="clrp"><L><P>+clear +pad +patterns</P></L></P>
+					<P VALSTR="clrp"><L><P>+clear +lane +patterns</P></L></P>
+				</L>
+				<L>
+					<P>
+						<P>+for</P>
+						<L>
+							<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+							<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE1_LONG"/>
+						</L>
+					</P>
+					
+					<P>
+						<P>+for +a</P>
+					</P>
+				</L>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="s"><L><P>+step</P><P>+steps</P></L></P>
+					<P VALSTR="n"><L><P>+note</P><P>+notes</P><P>+note +line</P><P>+note +lines</P></L></P>
+					<P VALSTR="m"><L><P>+measure</P><P>+measures</P><P>+measure +line</P><P>+measure +lines</P></L></P>
+				</L>
+				<O>...</O>
+				<O><RULEREF NAME="PADS" PROPNAME="PAD"/></O>
+			</P>
+		</L>
+		
+	</RULE>	
+	
+	
+	<RULE NAME="act_act" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="act add">+add +action +shortcut</P>
+					<P VALSTR="act add">+save +action +shortcut</P>
+					<P VALSTR="act add">+new +action +shortcut</P>
+					<P VALSTR="act add">+register +action +shortcut</P>
+					<P VALSTR="act list">+list +action<L><P>+shortcut</P><P>+shortcuts</P></L></P>
+				</L>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="act update">+update +action +shortcut</P>
+				</L>
+				<P>+for</P>
+				<RULEREF NAME="SAVED_ACTIONS" PROPNAME="SAVED_ACTION"/>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="act del">+delete +action +shortcut</P>
+				</L>
+				<P>+for</P>
+				<RULEREF NAME="SAVED_ACTIONS" PROPNAME="SAVED_ACTION"/>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="act">+recall +action</P>
+					<P VALSTR="act">+execute +action</P>
+				</L>
+				<O>...</O>
+				<RULEREF NAME="SAVED_ACTIONS" PROPNAME="SAVED_ACTION"/>
+				<O PROPNAME="SWITCH" VALSTR="extra"><L><P>+with +parameter</P><P>+with +parameters</P></L></O>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_macro" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="macro record"><L><P>+add</P><P>+ad</P></L><O>...</O>+macro</P>
+					<P VALSTR="macro record">+record<O>...</O>+macro</P>
+					<P VALSTR="macro record">+save<O>...</O>+macro</P>
+					<P VALSTR="macro record">+new +macro</P>
+					<P VALSTR="macro record">+register<O>...</O>+macro</P>
+					<P VALSTR="macro list">+list<O>...</O><L><P>+macro</P><P>+macros</P></L></P>
+				</L>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="macro stop">+stop +recording<O>...</O>+macro</P>
+				</L>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="macro start">+recall<O>...</O>+macro</P>
+					<P VALSTR="macro start">+execute<O>...</O>+macro</P>
+					<P VALSTR="macro start">+run<O>...</O>+macro</P>
+					<P VALSTR="macro start">+start<O>...</O>+macro</P>
+				</L>
+				<RULEREF NAME="SAVED_MACROS" PROPNAME="SAVED_MACRO"/>
+				<O>
+					<L>
+						<P>
+							<P>+for</P>
+							<L>
+								<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+								<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE1_LONG"/>
+							</L>
+							<L><P>+time</P><P>+times</P></L>
+						</P>
+					</L>
+				</O>
+			</P>
+			
+			<P>
+				<L>
+					<P PROPNAME="ACTION" VALSTR="macro del all">+delete +all +macros</P>
+					<P>
+						<P PROPNAME="ACTION" VALSTR="macro del">+delete<O>...</O>+macro</P>
+						<RULEREF NAME="SAVED_MACROS" PROPNAME="SAVED_MACRO"/>
+					</P>
+				</L>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_track" TOPLEVEL="ACTIVE">
+		
+		<P PROPNAME="ACTION" VALSTR="track restore">+restore</P>
+		
+		<L PROPNAME="SWITCH">
+			<P VALSTR="bpm"><L><P>+beat</P><P>+b +p +m</P><P>+bpm</P></L></P>
+			<P VALSTR="tms"><L><P>+time +signature</P><P>+timesignature</P><P>+t +m +s</P><P>+tms</P></L></P>
+			<P VALSTR="anc">+anchor</P>
+			
+			<P VALSTR="synctrack"><L><P>+sync +track</P><P>+synctrack</P></L></P>
+			
+			<P VALSTR="sec"><L><P>+section</P><P>+sections</P></L></P>
+			<P VALSTR="lyr"><L><P>+lyric</P><P>+lyrics</P></L></P>
+			<P VALSTR="tre"><L><P>+track +event</P><P>+track +events</P></L></P>
+			
+			<P VALSTR="events"><L><P>+event</P><P>+events</P></L></P>
+
+			<P VALSTR="all"><L><P>+all</P></L></P>
+		</L>
+		
+		<L><P>+marker</P><P>+markers</P></L>
+		
+		<O>
+			<L><P>+with</P><P>+including</P><P>+include</P></L>
+			<P PROPNAME="OFFSET" VALSTR="off"><L><P>+offset</P><P>+offsets</P></L></P>
+			<O>...</O>
+		</O>
+	
+	</RULE>
+	
+
+	<RULE NAME="act_stream" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L PROPNAME="ACTION"><P VALSTR="stream">+set</P></L>
+				<O>...</O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="M"><L><P>+music</P><P>+musics</P></L></P>
+					<P VALSTR="G"><L><P>+guitar</P><P>+guitars</P></L></P>
+					<P VALSTR="R"><L><P>+rhythm</P><P>+rhythms</P><P>+redeem</P><P>+reteam</P></L></P>
+					<P VALSTR="B"><L><P>+bass</P><P>+base</P></L></P>
+					<P VALSTR="D"><L><P>+drum</P><P>+drums</P></L></P>
+					<P VALSTR="D"><L><P>+first +drum</P><P>+first +drums</P></L></P>
+					<P VALSTR="D2"><L><P>+drum +two</P><P>+drums +two</P></L></P>
+					<P VALSTR="D2"><L><P>+second +drum</P><P>+second +drums</P></L></P>
+					<P VALSTR="D3"><L><P>+drum +three</P><P>+drums +three</P></L></P>
+					<P VALSTR="D3"><L><P>+third +drum</P><P>+third +drums</P></L></P>
+					<P VALSTR="D4"><L><P>+drum +four</P><P>+drums +four</P></L></P>
+					<P VALSTR="D4"><L><P>+fourth +drum</P><P>+fourth +drums</P></L></P>
+					<P VALSTR="V"><L><P>+vocal</P><P>+vocals</P></L></P>
+					<P VALSTR="K"><L><P>+keyboard</P><P>+keyboards</P><P>+keys</P></L></P>
+					<P VALSTR="C"><L><P>+crowd</P><P>+crowds</P></L></P>
+				</L>
+				<L><P>+stream</P><P>+streams</P></L>
+				<O>
+					<P><L><P>+with</P><P>+with +extension</P><P>+extension</P></L></P>
+					<L PROPNAME="EXTENSION">
+						<P VALSTR="ogg"><L><P>+ogg</P><P>+o +g +g</P><P>+ogg +vorbis</P></L></P>
+						<P VALSTR="mp3"><L><P>+m + p +three</P><P>+m +peg +three</P><P>+mp3</P></L></P>
+					</L>
+				</O>
+			</P>
+			
+			<P>
+				<L PROPNAME="ACTION"><P VALSTR="stream">+clear</P></L>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="clr"><L><P>+all<O>...</O></P><P>+every</P></L></P>
+				</L>
+				<L><P>+stream</P><P>+streams</P></L>
+			</P>
+		</L>
+	
+	</RULE>	
+	
+	
+	<RULE NAME="act_offset" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L><P>+delete</P><P>+clear</P></L>
+				<O>...</O>
+				<L><P>+offset</P><P>+offsets</P><P>+offset +values</P></L>
+				<P>+for<O>...</O></P>
+				<L PROPNAME="ACTION">
+					<P VALSTR="offset del"><L><P>+row</P><P>+step</P><P>+steps</P></L></P>
+					<P VALSTR="offset del all">+track</P>
+				</L>
+			</P>
+			
+			<P>
+				<P PROPNAME="ACTION" VALSTR="offset del"><L><P>+delete</P><P>+clear</P></L></P>
+				<L>
+					<P>
+						<O>...</O>
+						<L><P>+offset</P><P>+offsets</P><P>+offset +values</P></L>
+						<P>+for<O>...</O></P>
+						<O PROPNAME="SWITCH" VALSTR="all">+all</O>
+						<O>...</O>
+						<L PROPNAME="OFFSET">
+							<P VALSTR="bpm"><L><P>+beat</P><P>+b +p +m</P><P>+bpm</P></L></P>
+							<P VALSTR="tms"><L><P>+time +signature</P><P>+timesignature</P><P>+t +m +s</P><P>+tms</P></L></P>
+							<P VALSTR="anc">+anchor</P>
+							
+							<P VALSTR="synctrack"><L><P>+sync +track</P><P>+synctrack</P></L></P>
+							
+							<P VALSTR="sec"><L><P>+section</P><P>+sections</P></L></P>
+							<P VALSTR="lyr"><L><P>+lyric</P><P>+lyrics</P></L></P>
+							<P VALSTR="tre"><L><P>+track +event</P><P>+track +events</P></L></P>
+							
+							<P VALSTR="events"><L><P>+event</P><P>+events</P></L></P>
+							
+							<P VALSTR="inste"><L><P>+instrument +event</P><P>+instrument +events</P></L></P>
+							<P VALSTR="solo"><L><P>+solo</P></L></P>
+							<P VALSTR="sp"><L><P>+star +power</P><P>+starpower</P></L></P>
+							<P VALSTR="instrument"><L><P>+instrument</P><P>+instruments</P></L></P>
+						</L>
+						<L><P>+marker</P><P>+markers</P></L>
+					</P>
+					
+					<P>
+						<O PROPNAME="SWITCH" VALSTR="all">+all</O>
+						<L><P>+offset</P><P>+offsets</P><P>+offset +values</P></L>
+						<P>+for<O>...</O></P>
+						<L>
+							<P PROPNAME="OFFSET" VALSTR="pads"><L><P>+pads</P><P>+lanes</P></L></P>
+							<RULEREF NAME="PADS" PROPNAME="PAD"/>
+						</L>
+					</P>
+				</L>
+				
+			</P>
+			
+			<P>
+				<L>
+					<P>
+						<P PROPNAME="ACTION" VALSTR="offset">+offset</P>
+						<O>...</O>
+						<L PROPNAME="OFFSET">
+							<P VALSTR="bpm"><L><P>+beat</P><P>+b +p +m</P><P>+bpm</P></L></P>
+							<P VALSTR="tms"><L><P>+time +signature</P><P>+timesignature</P><P>+t +m +s</P><P>+tms</P></L></P>
+							<P VALSTR="anc">+anchor</P>
+							
+							<P VALSTR="synctrack"><L><P>+sync +track</P><P>+synctrack</P></L></P>
+							
+							<P VALSTR="sec"><L><P>+section</P><P>+sections</P></L></P>
+							<P VALSTR="lyr"><L><P>+lyric</P><P>+lyrics</P></L></P>
+							<P VALSTR="tre"><L><P>+track +event</P><P>+track +events</P></L></P>
+							
+							<P VALSTR="events"><L><P>+event</P><P>+events</P></L></P>
+							
+							<P VALSTR="inste"><L><P>+instrument +event</P><P>+instrument +events</P></L></P>
+							<P VALSTR="solo"><L><P>+solo</P></L></P>
+							<P VALSTR="sp"><L><P>+star +power</P><P>+starpower</P></L></P>
+							<P VALSTR="instrument"><L><P>+instrument</P><P>+instruments</P></L></P>
+						</L>
+						<L><P>+marker</P><P>+markers</P></L>
+						<L><P>+by</P><P>+buy</P><P>+with</P><P>+for</P></L>
+						<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+					</P>
+					
+					<P>
+						<P PROPNAME="ACTION" VALSTR="offset">+offset</P>
+						<O>...</O>
+						<L>
+							<P PROPNAME="OFFSET" VALSTR="row"><L><P>+row</P><P>+step</P><P>+step</P></L></P>
+							<P PROPNAME="OFFSET" VALSTR="pads"><L><P>+pads</P><P>+lanes</P></L></P>
+							<RULEREF NAME="PADS" PROPNAME="PAD"/>
+						</L>
+						<L><P>+by</P><P>+buy</P><P>+with</P><P>+for</P></L>
+						<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+					</P>
+				</L>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_fin" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<P>+finalize</P>
+				<O>...</O>
+				<P>+track</P>
+				<P>+at</P>
+				<O>...</O>
+				<L PROPNAME="ACTION">
+					<P VALSTR="fin duration"><L><P>+duration</P><P>+song +length</P><P>+songlength</P></L></P>
+					<P VALSTR="fin measure"><L><P>+measure</P><P>+measures</P></L></P>
+					<P VALSTR="fin"><L><P>+row</P><P>+step</P><P>+steps</P></L></P>
+				</L>
+			</P>
+			
+			<P>
+				<P>+update</P>
+				<O>...</O>
+				<P PROPNAME="ACTION" VALSTR="fin update"><L><P>+duration</P><P>+song +length</P><P>+songlength</P></L></P>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_rep" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<P PROPNAME="ACTION" VALSTR="rep">+repeat +notes</P>
+				<O>...</O>
+				<O>
+					<P>+on</P>
+					<O>...</O>
+					<P><RULEREF NAME="PADS" PROPNAME="PAD"/></P>
+				</O>
+			</P>
+			
+			<P>
+				<P PROPNAME="ACTION" VALSTR="rep">+repeat</P>
+				<O>...</O>
+				<L PROPNAME="DIRECTION">
+					<P VALSTR=" "><L><P>+next</P><P>+this</P><P>+these</P></L></P>
+					<P VALSTR="-"><L><P>+previous</P><P>+last</P></L></P>
+				</L>
+				<O><RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/></O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="n"><L><P>+note</P><P>+notes</P></L><L><P>+line</P><P>+lines</P></L></P>
+					<P VALSTR="m"><L><P>+measure</P><P>+measures</P></L><L><P>+line</P><P>+lines</P></L></P>
+				</L>
+				<O>
+					<P>+on</P>
+					<O>...</O>
+					<RULEREF NAME="PADS" PROPNAME="PAD"/>
+				</O>	
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_pat" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<P PROPNAME="ACTION" VALSTR="pat"><L><P>+repeat +pattern</P><P>+repeatpattern</P></L></P>
+				<O>
+					<P>+for</P>
+					<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+					<L><P>+time</P><P>+times</P></L>
+				</O>
+				<O>
+					<P>+on</P>
+					<O>...</O>
+					<RULEREF NAME="PADS" PROPNAME="PAD"/>
+				</O>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_color" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<L>
+					<P PROPNAME="ACTION" VALSTR="color"><L><P>+color</P><P>+colors</P></L></P>
+					<P PROPNAME="ACTION" VALSTR="color"><L><P>+colour</P><P>+colours</P></L></P>
+				</L>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="prio note">+priority +note<O>+lines</O></P>
+					<P VALSTR="prio pad">+priority<L><P>+pads</P><P>+lanes</P></L></P>
+				</L>
+			</P>
+			
+			<P>
+				<O><L><P>+repaint</P><P>+paint</P><P>+apply</P><P>+reapply</P></L></O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="sustain">+sustain</P>
+					<P VALSTR="solo">+solo</P>
+					<P VALSTR="sp"><L><P>+star +power</P><P>+starpower</P></L></P>
+					<P VALSTR="tap">+tap<O><L><P>+note</P><P>+notes</P></L></O></P>
+					<P VALSTR="track">+track</P>
+					<P VALSTR="lanes"><L><P>+lane</P><P>+lanes</P></L></P>
+					<P VALSTR="pads"><L><P>+pad</P><P>+pads</P></L></P>
+					<P VALSTR="ts"><L><P>+time +signature</P><P>+timesignature</P></L></P>
+					<P VALSTR="ts"><L><P>+t+m+s</P><P>+tms</P></L></P>
+					<P VALSTR="all">+all</P>
+					<P VALSTR="clear">+clear</P>
+				</L>
+				<L>
+					<P PROPNAME="ACTION" VALSTR="color"><L><P>+color</P><P>+colors</P></L></P>
+					<P PROPNAME="ACTION" VALSTR="color"><L><P>+colour</P><P>+colours</P></L></P>
+				</L>
+			</P>
+			
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="shape update"><L><P>+update</P><P>+apply</P><P>+reapply</P></L></P>
+					<P VALSTR="shape del">+delete</P>
+					<P VALSTR="shape del all">+delete +all</P>
+					<P VALSTR="shape del note">+delete<L><P>+note</P><P>+notes</P></L></P>
+					<!--P VALSTR="shape del note all">+delete +all<L><P>+note</P><P>+notes</P></L></P-->
+					<P VALSTR="shape del sustain">+delete<L><P>+sustain</P><P>+sustains</P></L></P>
+					<!--P VALSTR="shape del sustain all">+delete +all<L><P>+sustain</P><P>+sustains</P></L></P-->
+					<P VALSTR="shape hide note">+hide<L><P>+note</P><P>+notes</P></L></P>
+					<P VALSTR="shape hide sustain">+hide<L><P>+sustain</P><P>+sustains</P></L></P>
+					<P VALSTR="shape hide all">+hide +all</P>
+					<P VALSTR="shape show note">+show<L><P>+note</P><P>+notes</P></L></P>
+					<P VALSTR="shape show sustain">+show<L><P>+sustain</P><P>+sustains</P></L></P>
+					<P VALSTR="shape show all">+show +all</P>
+				</L>
+				<L>
+					<P PROPNAME="ACTION" VALSTR="color"><L><P>+shape</P><P>+shapes</P></L></P>
+				</L>
+			</P>
+			
+			<P>
+				<P PROPNAME="ACTION" VALSTR="color"><L><P>+update</P><P>+apply</P><P>+reapply</P></L></P>
+				<P PROPNAME="SWITCH" VALSTR="shape update style"><L><P>+shape</P><P>+shapes</P></L></P>
+				<L><P>+sytle</P><P>+sytles</P></L>
+			</P>
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="act_instrument" TOPLEVEL="ACTIVE">
+	
+		<L>
+			<P>
+				<O>+set</O>
+				<O>...</O>
+				<P>+instrument</P>
+				<P PROPNAME="ACTION" VALSTR="rng inst_difficulty">+difficulty</P>
+				<O>...</O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="Expert">+expert</P>
+					<P VALSTR="Hard">+hard</P>
+					<P VALSTR="Medium">+medium</P>
+					<P VALSTR="Easy">+easy</P>
+				</L>
+			</P>
+			
+			<P>
+				<O>+set</O>
+				<O>...</O>
+				<P PROPNAME="ACTION" VALSTR="rng instrument">+instrument</P>
+				<O>...</O>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="Drums">+drums</P>
+					<P VALSTR="Single">+single</P>
+					<P VALSTR="DoubleGuitar">+double +guitar</P>
+					<P VALSTR="DoubleBass">+double<L><P>+bass</P><P>+base</P></L><O>...</O></P>
+					<P VALSTR="DoubleRhythm">+double<L><P>+rhythm</P><P>+redeem</P><P>+reteam</P></L></P>
+					<P VALSTR="Keyboard">+keyboard</P>
+					<P VALSTR="GHLGuitar"><L><P><O>+guitar +hero</O>+live</P><P>+g +h +l</P><P>+ghl</P></L>+guitar</P>
+					<P VALSTR="GHLBass"><L><P><O>+guitar +hero</O>+live</P><P>+g +h +l</P><P>+ghl</P></L><L><P>+bass</P><P>+base</P></L><O>...</O></P>
+				</L>
+			</P>
+			
+			<P>
+				<L PROPNAME="SWITCH">
+					<P VALSTR="load">+load</P>
+					<P VALSTR="save">+save</P>
+					<P VALSTR="restore">+restore</P>
+					<P VALSTR="copy">+copy</P>
+				</L>
+				<O>...</O>
+				<P>+instrument</P>
+				<P PROPNAME="ACTION" VALSTR="inst">+track</P>
+			</P>
+		</L>
+		
+	</RULE>
+	
+
+	<RULE NAME="act_last" TOPLEVEL="ACTIVE">
+		
+		<L>
+			<P>
+				<P PROPNAME="ACTION" VALSTR="last">+repeat<o>+last</o>+action</P>
+			</P>			
+		</L>
+		
+	</RULE>
+	
+	
+	<RULE NAME="number_test" TOPLEVEL="ACTIVE">
+				
+		<P PROPNAME="ACTION" VALSTR="number_test">+number</P>
+		<L>
+			<RULEREF NAME="GET_NUMBER_UNITS" PROPNAME="VALUE1_SHORT"/>
+			<RULEREF NAME="GET_NUMBER" PROPNAME="VALUE1_LONG"/>
+		</L>
+		
+	</RULE>
+	
+	
+	<!-- NUMBERS -->
+	<RULE NAME="GET_NUMBER_UNITS">
+	
+		<RULEREF NAME="NUMBERS_UNITS" PROPNAME="number_1"/>
+		<RULEREF NAME="NUMBERS_TENS" PROPNAME="number_2"/>
+		<RULEREF NAME="NUMBERS_UNITS" PROPNAME="number_3"/>
+		<RULEREF NAME="NUMBERS_MULTIPLIER" PROPNAME="number_4"/>
+	
+	</RULE>
+	
+	<RULE NAME="GET_NUMBER">
+	
+		<O><RULEREF NAME="NUMBERS" PROPNAME="number_1" /></O>
+		<O><RULEREF NAME="NUMBERS" PROPNAME="number_2" /></O>
+		<O><RULEREF NAME="NUMBERS" PROPNAME="number_3" /></O>
+		<O><RULEREF NAME="NUMBERS" PROPNAME="number_4" /></O>
+		<O><RULEREF NAME="NUMBERS" PROPNAME="number_5" /></O>
+
+	</RULE>
+
+	<RULE NAME="NUMBERS">
+
+		<O><RULEREF NAME="NUMBERS_TENS" PROPNAME="TENS"/></O>
+		<O><RULEREF NAME="NUMBERS_UNITS" PROPNAME="UNITS"/></O>
+		<O><RULEREF NAME="NUMBERS_MULTIPLIER" PROPNAME="MULTIPLIER"/></O>
+
+	</RULE>
+	
+	<RULE NAME="NUMBERS_UNITS">
+
+		<O><L PROPNAME="UNITS">
+			<P VAL="0">+zero</P>
+			<P VAL="1">+one</P>
+			<P VAL="2">+two</P>
+			<P VAL="3">+three</P>
+			<P VAL="4">+four</P>
+			<P VAL="5">+five</P>
+			<P VAL="6">+six</P>
+			<P VAL="7">+seven</P>
+			<P VAL="8">+eight</P>
+			<P VAL="9">+nine</P>
+			<P VAL="10">+ten</P>
+			<P VAL="11">+eleven</P>
+			<P VAL="12">+twelve</P>
+			<P VAL="13">+thirteen</P>
+			<P VAL="14">+fourteen</P>
+			<P VAL="15">+fifteen</P>
+			<P VAL="16">+sixteen</P>
+			<P VAL="17">+seventeen</P>
+			<P VAL="18">+eighteen</P>
+			<P VAL="19">+nineteen</P>
+		</L></O>
+
+	</RULE>
+	
+	<RULE NAME="NUMBERS_TENS">
+
+		<O><L PROPNAME="TENS">	
+			<P VAL="20">+twenty</P>
+			<P VAL="30">+thirty</P>
+			<P VAL="40">+fourty</P>
+			<P VAL="50">+fifty</P>
+			<P VAL="60">+sixty</P>
+			<P VAL="70">+seventy</P>
+			<P VAL="80">+eighty</P>
+			<P VAL="90">+ninety</P>
+		</L></O>
+
+	</RULE>
+	
+	<RULE NAME="NUMBERS_MULTIPLIER">
+
+		<O><L PROPNAME="MULTIPLIER">
+			<P VAL="100">+hundred<O>+and</O></P>
+			<P VAL="100">+hundreds<O>+and</O></P>
+			<P VAL="1000">+thousand<O>and</O></P>
+			<P VAL="1000">+thousands<O>and</O></P>
+			<P VAL="1000000">+million<O>and</O></P>
+			<P VAL="1000000">+millions<O>and</O></P>
+			<!--P VAL="1000000000">+billion</P-->
+		</L></O>
+
+	</RULE>
+
+	
+	<RULE NAME="NUMBERS_ORDER">
+		
+		<L PROPNAME="ORDER">
+			<P VAL = "1">+first</P>
+			<P VAL = "2">+second</P>
+			<P VAL = "3">+third</P>
+			<P VAL = "4">+fourth</P>
+			<P VAL = "5">+fifth</P>
+			<P VAL = "6">+sixth</P>
+			<P VAL = "7">+seventh</P>
+			<P VAL = "8">+eighth</P>
+			<P VAL = "9"><L><P>+ninth</P><!--P>+nineth</P--></L></P>
+			<P VAL = "10">+tenth</P>
+		</L>
+	
+	</RULE>
+	
+	
+	<!-->VARIABLE STUFF  <-->
+
+	<!-- VAR: PADS/LANES -->
+	<RULE NAME="PADS">
+	
+		<L PROPNAME="PADS">
+			<P VALSTR="S">+snares</P>
+			<P VALSTR="HH">+high +hat</P>
+			<P VALSTR="K">+kick</P>
+			<P VALSTR="KK"><L><P>+double +kick</P><P>+doublekick</P></L></P>
+			<P VALSTR="KK"><L><P>+second +kick</P><P>+secondkick</P></L></P>
+			<P VALSTR="T1">+high +tom</P>
+			<P VALSTR="T1">+first +tom</P>
+			<P VALSTR="C1">+left +cymbal</P>
+			<P VALSTR="C1">+first +cymbal</P>
+			<P VALSTR="T2">+low +tom</P>
+			<P VALSTR="T2">+second +tom</P>
+			<P VALSTR="T3">+floor +tom</P>
+			<P VALSTR="T3">+third +tom</P>
+			<P VALSTR="C2">+right +cymbal</P>
+			<P VALSTR="C2">+second +cymbal</P>
+			
+			<P VALSTR="G">+green +lane</P>
+			<P VALSTR="R">+red +lane</P>
+			<P VALSTR="Y">+yellow +lane</P>
+			<P VALSTR="B">+blue +lane</P>
+			<P VALSTR="O">+orange +lane</P>
+			
+			<P VALSTR="B1">+black +one<O>+lane</O></P>
+			<P VALSTR="B1">+first +black<O>+lane</O></P>
+			<P VALSTR="B2">+black +two<O>+lane</O></P>
+			<P VALSTR="B2">+second +black<O>+lane</O></P>
+			<P VALSTR="B3">+black +three<O>+lane</O></P>
+			<P VALSTR="B3">+third +black<O>+lane</O></P>
+			<P VALSTR="W1">+white +one<O>+lane</O></P>
+			<P VALSTR="W1">+first +white<O>+lane</O></P>
+			<P VALSTR="W2">+white +two<O>+lane</O></P>
+			<P VALSTR="W2">+second +white<O>+lane</O></P>
+			<P VALSTR="W3">+white +three<O>+lane</O></P>
+			<P VALSTR="W3">+third +white<O>+lane</O></P>
+			
+			<P VALSTR="ON">+open +lane</P>
+			<P VALSTR="ON">+line +lane</P>
+			
+			<P VALSTR="FN">+make<O>...</O>+forced</P>
+			<P VALSTR="TN">+make<O>...</O>+tap</P>
+		</L>
+		
+	</RULE>
+	
+	<!-- VAR: SHEETNAMES -->
+	<RULE NAME="SHEETNAMES">
+	
+		<L PROPNAME="SHEETNAMES">
+			<P VALSTR="Instructions">+instructions</P>
+			<P VALSTR="SMan">+sheets</P>
+			<P VALSTR="Chart">+chart</P>
+			<P VALSTR="Machine"><O>the</O>+machine</P>
+			<P VALSTR="Patterns"><L><P>+pattern</P><P>+patterns</P></L></P>
+			<P VALSTR="Macros">+macros</P>
+			<P VALSTR="Samples">+samples</P>
+			<P VALSTR="Settings">+settings</P>
+			<P VALSTR="Log">+log</P>
+		</L>
+
+	</RULE>
+
+	<!-- VAR: INTERFACE PAGE NAMES 1 -->
+	<RULE NAME="PAGE_NAMES1">
+		
+		<L>
+			<P>
+				<!-- Chart Interface -->
+				<L PROPNAME="PAGE_NAMES">
+					<P VALSTR="C-CI-Chart-0">+chart</P>
+					<P VALSTR="C-CI-Sheets-3">+sheets</P>
+					<P VALSTR="C-CI-Instructions-4">+instructions</P>
+					<P VALSTR="C-CI-Program-6">+program</P>
+					<P VALSTR="C-CI-Apps-7"><L><P>+apps</P><P>+applications</P></L></P>
+					<!-- <P VALSTR="">+</P> -->
+				</L>
+			</P>
+			
+			<P>
+				<!-- COMMON PAGES -->
+				<L PROPNAME="PAGE_NAMES">
+					<P VALSTR="C-CI-Samples-1.M-TM-Samples-1">+samples</P>
+					<P VALSTR="C-CI-Settings-2.M-TM-Settings-6">+settings</P>
+					<P VALSTR="C-CI-Options-5.M-TM-Options-5">+options</P>
+				</L>
+			</P>
+			
+			<P>
+				<!-- Machine Interface -->
+				<L PROPNAME="PAGE_NAMES">
+					<P VALSTR="M-TM-Playback-0">+playback</P>
+					<P VALSTR="M-TM-Video-2">+video</P>
+					<P VALSTR="M-TM-Recording-3">+recording</P>
+					<P VALSTR="M-TM-Tests-4">+tests</P>
+					<!-- <P VALSTR="">+</P> -->
+				</L>
+			</P>
+		</L>
+		
+	</RULE>
+
+	<!-- VAR: INTERFACE PAGE NAMES 2 -->
+	<RULE NAME="PAGE_NAMES2">
+		
+		<L>
+			<P>
+				<!-- Chart Interface -->
+				<L PROPNAME="PAGE_NAMES">
+					<P VALSTR="C-Chart-Page12-0,1"><L><P>+property</P><P>+properties</P><P>+meta +data</P></L></P>
+					<P VALSTR="C-Chart-Page13-0,2">+import +export</P>
+					<P VALSTR="C-Chart-Page14-0,3"><L><P>+backup +restore</P><P>+backup</P><P>+restore</P></L></P>
+					
+					<P VALSTR="C-Chart_MetaData-Page121-0,1,0">+track<L><P>+info</P><P>+information</P></L></P>
+					<P VALSTR="C-Chart_MetaData-Page122-0,1,1">+streams</P>
+					<P VALSTR="C-Chart_MetaData-Page123-0,1,2">+difficulty</P>
+					<!-- <P VALSTR="">+</P> -->
+				</L>
+			</P>
+			
+			<P>
+				<!-- COMMON PAGES -->
+				<L PROPNAME="PAGE_NAMES">
+					<P VALSTR="C-Chart-Page11-0,0.M-Playback-Page1-0,0">+track</P>
+					
+					<P VALSTR="C-Samples-Page21-1,0.M-Samples-Page21-1,0">+general</P>
+					<P VALSTR="C-Samples-Page22-1,1.M-Samples-Page22-1,1">+sample +table</P>
+					
+					<P VALSTR="C-Settings-Page71-2,0.M-Settings-Page71-6,0">+recovery</P>
+					<P VALSTR="C-Settings-Page72-2,1.M-Settings-Page72-6,1">+excel +file</P>
+					<P VALSTR="C-Settings-Page73-2,2.M-Settings-Page73-6,2">+charting</P>
+					<P VALSTR="C-Settings-Page74-2,3.C-Chart-Page13-0,2.M-Settings-Page74-6,3">+import</P>
+					<P VALSTR="C-Settings-Page75-2,4.C-Chart-Page13-0,2.M-Settings-Page75-6,4">+export</P>
+					<P VALSTR="C-Settings-Page76-2,5.M-Settings-Page76-6,5">+program</P>
+					<P VALSTR="C-Settings-Page77-2,6.M-Settings-Page77-6,6">+I +know</P>
+					<P VALSTR="C-Settings-Page78-2,7.M-Settings-Page78-6,7">+colors</P>
+					
+					<P VALSTR="C-Options-Page61-5,0.M-Options-Page61-5,0">+interface</P>
+					<P VALSTR="C-Options-Page62-5,1.M-Options-Page62-5,1">+sheets</P>
+					<P VALSTR="C-Options-Page63-5,2.M-Options-Page63-5,2">+mouse</P>
+					<P VALSTR="C-Options-Page64-5,3.M-Options-Page64-5,3">+modifier +keys</P>
+					<P VALSTR="C-Options-Page65-5,4.M-Options-Page65-5,4">+mouse +wheel</P>
+					<P VALSTR="C-Options-Page66-5,5.M-Options-Page66-5,5">+shortcuts</P>
+					<P VALSTR="C-Chart_MetaData-Page124-0,1,3.M-Playback-Page6-0,5"><L><P>+misc</P><P>+miscellaneous</P></L></P>
+				</L>
+			</P>
+			
+			<P>
+				<!-- Machine Interface -->
+				<L PROPNAME="PAGE_NAMES">
+					<P VALSTR="M-Playback-Page2-0,1">+volume</P>
+					<P VALSTR="M-Playback-Page3-0,2"><L><P>+add</P></L><O>...</O>+strings</P>
+					<P VALSTR="M-Playback-Page4-0,3">+manage<O>...</O>+strings</P>
+					<P VALSTR="M-Playback-Page5-0,4">+keys</P>
+				</L>	
+			</P>
+		</L>
+		
+	</RULE>
+
+	<!-- VAR: METADATA LIST -->
+	<RULE NAME="METADATA_LIST">
+	
+		<L PROPNAME="METADATA_LIST">
+			<P VALSTR="Album"><L><P>+album</P><P>+albuem</P></L></P>
+			<P VALSTR="AlbumTrack"><L><P>+album +track</P><P>+albumtrack</P></L></P>
+			<P VALSTR="Artist">+artist</P>
+			<P VALSTR="BassStream"><L><P>+bass +stream</P><P>+basestream</P><P>+base +stream</P></L></P>
+			<P VALSTR="Charter"><L><P>+charter</P><P>+charters</P></L></P>
+			<P VALSTR="CrowdStream"><L><P>+crowd +stream</P><P>+crowdstream</P></L></P>
+			<P VALSTR="diff_Band"><L><P>+band +difficulty</P></L></P>
+			<P VALSTR="diff_Guitar"><L><P>+guitar +difficulty</P></L></P>
+			<P VALSTR="diff_GuitarGHL"><L><P>+guitar +hero +live +guitar +difficulty</P><P>+ghl +guitar +difficulty</P><P>+g +h +l +guitar +difficulty</P></L></P>
+			<P VALSTR="loading_phrase"><L><P>+loading +phrase</P><P>+loadingphrase</P></L></P>
+		</L>
+		
+	</RULE>
+	
+	<!-- VAR: SETTINGS LIST -->
+	<RULE NAME="SETTINGS_LIST">
+	
+		<L PROPNAME="SETTINGS_LIST">
+			<P VALSTR="AutoOpen"><L><P>+auto +open</P></L></P>
+			<P VALSTR="PatternFileOpen"><L><P>+pattern +file +open</P></L></P>
+			<P VALSTR="Excel_Priority"><L><P>+excel +priority</P></L></P>
+			<P VALSTR="FillColorPrio"><L><P>+fill +color +priority</P></L></P>
+			<P VALSTR="ColorProfile"><L><P>+color +profile</P></L></P>
+			<P VALSTR="Delay_mciSendString"><P>+delay</P><L><P>+mci</P><P>+m +c +i</P></L><L><P>+sendstring</P><P>+send +string</P></L></P>
+		</L>
+		
+	</RULE>
+
+

@@ -1,0 +1,17 @@
+Empty Folder|empty-folder-icon.ico|1
+Full Folder|full-folder-icon.ico|1
+Unknown File|unknown-file-icon.ico|0
+ a3x|LazyD_Ch.ico|0
+txt rtf chart ini docx pdf|text-file-icon.ico|0
+xlsm xlsx|excel-file-icon.ico|0
+exe|application-file-icon.ico|0
+wav mp3 ogg flac|audio-file-icon.ico|0
+avi ogv wmv mp4 m4v mpg mp2 mpeg mpe mpv m2v|video-file-icon.ico|0
+ico|ico-file-icon.ico|0
+Comment|Keep comments here at the end. Will be stripped from array automatically. |
+Comment|Lines are formed as such, using 5th definition line as example |
+Comment|First 3 lines are hard coded, keep them as they are. ICO file name and Bold Bit can be changed|
+Comment|List of extension types - Example: txt rtf chart ini docx pdf |
+Comment|Ico File Name - Example: text-file-icon.ico |
+Comment|Bold Bit - (0 or 1) If TreeView Item will be set as bold or not. Example: 0 |
+Comment|Line4 is a special case where another extension is automatically prepended, hence an extra space is needed|

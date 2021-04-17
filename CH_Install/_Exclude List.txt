@@ -1,0 +1,13 @@
+If Batch File is under Installer Folder use this format, if not remove ".\" here
+
+C:\Users\gkhna\Desktop\CH_Install\.\_Create Self Extracting Exe.bat
+C:\Users\gkhna\Desktop\CH_Install\.\_Self Extracting Exe Configuration.txt
+C:\Users\gkhna\Desktop\CH_Install\.\_Exclude List.txt
+C:\Users\gkhna\Desktop\CH_Install\.\LazyD Charter Installer.exe
+C:\Users\gkhna\Desktop\CH_Install\.\CH Install.7z
+C:\Users\gkhna\Desktop\CH_Install\.\Required Software
+C:\Users\gkhna\Desktop\CH_Install\.\Required Software\*.*
+C:\Users\gkhna\Desktop\CH_Install\.\Extras
+C:\Users\gkhna\Desktop\CH_Install\.\Extras\*.*
+C:\Users\gkhna\Desktop\CH_Install\.\Resources
+C:\Users\gkhna\Desktop\CH_Install\.\Resources\*.*

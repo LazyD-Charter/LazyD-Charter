@@ -1,0 +1,6 @@
+;!@Install@!UTF-8!
+Title="LazyD Charter Installer v1.0.0.0"
+BeginPrompt="Do you want to install LazyD Charter v1.0.0.0?"
+Directory=".\\Scripts\\"
+RunProgram="AutoIt3.exe %%T\\Scripts\\CH_Installer.a3x"
+;!@InstallEnd@!
